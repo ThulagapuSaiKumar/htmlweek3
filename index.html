@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -19,13 +20,12 @@
   background-color: black;
 }
 .icon-bar a {
-  padding-left:0%;
   float: left;
   width: 20%;
   text-align: center;
   padding: 12px 0;
   transition: all 0.3s ease;
-  color:black;
+  color: black;
   font-size: 36px;
 }
 
@@ -50,14 +50,7 @@
         top: 10;
         left: 0;
       }
-    #pf1
-    {
-      position: absolute;
-      top: 520px;
-      left: 620px;
-      border:solid 4px  black;
-      display:block;
-    }
+   
       #header-nav
        {
           background-color:plum;
@@ -68,7 +61,8 @@
     background: url('../images/kick.jpg') no-repeat;
     width: 50px;
     height: 60px;
-    margin: 5px 5px 5px 5px;
+    padding-left: 0%;
+    margin: 5% 5px 5px 5px;
   }
   .navbar-brand
   {
@@ -77,41 +71,85 @@
     padding-left: 50px;
     padding-bottom: 5px;
   }
+ #name1{
+   font-style: bold;
+   color:black;
+   font-size: 40px;
+   padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 550px;
+    padding-bottom: 5px;
+ }
+ #branch1
+ {
+   font-style:bold;
+  color:black;
+   font-size: 40px;
+   padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 470px;
+    padding-bottom: 5px;
+
+ }
+
+/* large devicess              Simple Responsive Framework. */
   @media(min-width: 1200px)
   {
-    #header-nav{
-      width: 130%;
+    body{
+      width:100%;
     }
 
   }
-  @media (min-width: 900px)
+  /*medium devices             */
+  @media screen and (max-width: 959px) 
   {
-    body{
-      width: 80%;
+    #container{
+      width:100%;
     }
-
+    #sec1 {
+   width:70%;
   }
-  @media (min-width : 992px) and (max-width: 1199px)
+  #dept {
+   width:70%;
+  }
+  #profid{
+    width:70%;
+  }
+  .icon-bar
   {
-    body{
-      width:50%;
-    }
+    width: 70%;
   }
-  figcaption {
+  i{
+    width:5%;
+  }
+  #name1{
+   font-style: bold;
+   color:black;
+   font-size: 14px;
+   padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 150px;
+    padding-bottom: 5px;
+ }
+ #branch1
+ {
+   font-style:bold;
   color:black;
-  font-style: Times;
-  padding-top: 5px;
+   font-size: 14px;
+   padding-top: 5px;
     padding-bottom: 5px;
-    padding-left: 200px;
+    padding-left: 130px;
     padding-bottom: 5px;
-  text-align: center;
+
+ }
   }
-  i
+  /*small devices*/
+  @media screen and (max-width:650px)
   {
-    margin-left: 170px;
+
   }
-    </style>
- <body>
+  </style>
+  <body>
     <header>
         <nav id="header-nav" class="navbar navbar-default"><!--header-->
           <div class="container"> 
@@ -156,22 +194,44 @@
             </div>
             </div>
           </div>
-          <img id="cv" align="center" src="images\cover.jpg" alt="cover" width="100%" height="550">
-        <img id="pf1" align="center" src="images\profile.jpeg" alt="profile" width="200" height="200">
+          <img id="cv" align="center" src="images\complete_pic.png" alt="cover" width="100%" height="550">
+        <!--<img id="pf1" align="center" src="images\profile.jpeg" alt="profile" width="200" height="200">-->
         
+  
         </nav>
       </header>
-      <br><br><br>
-      <figcaption><h3><b>Thulagapu Sai Kumar</b></h3></figcaption>
-      <figcaption><h3><b>Information Technology Student</b></h3></figcaption>
+
+      <div id="container">
+        <section id="sec1">
+         <p id="name1">Thulagapu Sai Kumar</p>
+        </section>
+        <aside id="sec2">
+          <p id="branch1">Information Technology Student</p>
+        </aside>
+        <p id="pf1">Pofiles</p>
+        <br>
+        <div class="icon-bar" width=150%>
+          <a href="#"><i id="fb" class="fa fa-facebook"></i></a> 
+          <a href="#"><i class="fa fa-instagram"></i></a> 
+          <a href="#"><i class="fa fa-linkedin"></i></a>
+          <a href="#"><i class="fa fa-github"></i></a> 
+          <a href="#"><i class="fa fa-twitter"></i></a>
+        </div>
+      </div>
+      <!--<figcaption><h3><b>Thulagapu Sai Kumar</b></h3></figcaption>
+      <figcaption id="dept"><h3><b>Information Technology Student</b></h3></figcaption>
+      <figcaption><h3><b>____Profiles____</b></h3></figcaption>
+      </section>
       <div class="icon-bar" width=150%>
         <a href="#"><i id="fb" class="fa fa-facebook"></i></a> 
         <a href="#"><i class="fa fa-instagram"></i></a> 
         <a href="#"><i class="fa fa-linkedin"></i></a>
         <a href="#"><i class="fa fa-github"></i></a> 
         <a href="#"><i class="fa fa-twitter"></i></a>
+      </div>-->
       </div>
-      <figcaption><h3><b>Profiles<b></h3></figcaption>
+      <br>
+    
 
  </body>
 </html>
